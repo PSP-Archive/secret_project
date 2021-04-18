@@ -1,0 +1,175 @@
+Imports:
+Import 0, Name sceAudio, Functions 9, Variables 0, flags 40010011
+Functions:
+0x136CAF51 [0x0015B308] - sceAudioOutputBlocking
+0x13F592BC [0x0015B310] - sceAudioOutputPannedBlocking
+0x5EC81C55 [0x0015B318] - sceAudioChReserve
+0x6FC46853 [0x0015B320] - sceAudioChRelease
+0x95FD0C2D [0x0015B328] - sceAudioChangeChannelConfig
+0xB011922F [0x0015B330] - sceAudioGetChannelRestLength
+0xB7E1D8E7 [0x0015B338] - sceAudioChangeChannelVolume
+0xCB2E439E [0x0015B340] - sceAudioSetChannelDataLen
+0xE2D56B2D [0x0015B348] - sceAudioOutputPanned
+Import 1, Name sceGe_user, Functions 9, Variables 0, flags 40010011
+Functions:
+0x03444EB4 [0x0015B398] - sceGeListSync
+0x1C0D95A6 [0x0015B3A0] - sceGeListEnQueueHead
+0x1F6752AD [0x0015B3A8] - sceGeEdramGetSize
+0x4C06E472 [0x0015B3B0] - sceGeContinue
+0xAB49E76A [0x0015B3B8] - sceGeListEnQueue
+0xB287BD61 [0x0015B3C0] - sceGeDrawSync
+0xB448EC0D [0x0015B3C8] - sceGeBreak
+0xE0D68148 [0x0015B3D0] - sceGeListUpdateStallAddr
+0xE47E40E4 [0x0015B3D8] - sceGeEdramGetAddr
+Import 2, Name sceCtrl, Functions 3, Variables 0, flags 40010011
+Functions:
+0x1F4011E6 [0x0015B358] - sceCtrlSetSamplingMode
+0x1F803938 [0x0015B360] - sceCtrlReadBufferPositive
+0xDA6B76A1 [0x0015B368] - sceCtrlGetSamplingMode
+Import 3, Name sceDisplay, Functions 4, Variables 0, flags 40010011
+Functions:
+0x0E20F177 [0x0015B370] - sceDisplaySetMode
+0x289D82FE [0x0015B378] - sceDisplaySetFrameBuf
+0x984C27E7 [0x0015B380] - sceDisplayWaitVblankStart
+0xEEDA2E54 [0x0015B388] - sceDisplayGetFrameBuf
+Import 4, Name sceDmac, Functions 1, Variables 0, flags 40010011
+Functions:
+0x617F3FE6 [0x0015B390] - sceDmacMemcpy
+Import 5, Name sceRtc, Functions 3, Variables 0, flags 40010011
+Functions:
+0x3F7AD767 [0x0015B4B0] - sceRtcGetCurrentTick
+0x4CFA57B0 [0x0015B4B8] - sceRtcGetCurrentClock
+0xE7C27D1B [0x0015B4C0] - sceRtcGetCurrentClockLocalTime
+Import 6, Name sceMpeg, Functions 20, Variables 0, flags 00090011
+Functions:
+0x0E3C2E9D [0x0015B3E0] - sceMpegAvcDecode
+0x13407F13 [0x0015B3E8] - sceMpegRingbufferDestruct
+0x167AFD9E [0x0015B3F0] - sceMpegInitAu
+0x21FF80E4 [0x0015B3F8] - sceMpegQueryStreamOffset
+0x37295ED8 [0x0015B400] - sceMpegRingbufferConstruct
+0x42560F23 [0x0015B408] - sceMpegRegistStream
+0x591A4AA2 [0x0015B410] - sceMpegUnRegistStream
+0x606A4649 [0x0015B418] - sceMpegDelete
+0x611E9E11 [0x0015B420] - sceMpegQueryStreamSize
+0x800C44DF [0x0015B428] - sceMpegAtracDecode
+0xA780CF7E [0x0015B430] - sceMpegMallocAvcEsBuf
+0xB240A59E [0x0015B438] - sceMpegRingbufferPut
+0xB5F6DC87 [0x0015B440] - sceMpegRingbufferAvailableSize
+0xC132E22F [0x0015B448] - sceMpegQueryMemSize
+0xCEB870B1 [0x0015B450] - sceMpegFreeAvcEsBuf
+0xD7A29F46 [0x0015B458] - sceMpegRingbufferQueryMemSize
+0xD8C5F121 [0x0015B460] - sceMpegCreate
+0xE1CE83A7 [0x0015B468] - sceMpegGetAtracAu
+0xF8DCB679 [0x0015B470] - sceMpegQueryAtracEsSize
+0xFE246728 [0x0015B478] - sceMpegGetAvcAu
+Import 7, Name sceAtrac3plus, Functions 4, Variables 0, flags 00090011
+Functions:
+0x61EB33F5 [0x0015B2E8] - sceAtracReleaseAtracID
+0x6A8C3CD5 [0x0015B2F0] - sceAtracDecodeData
+0x7A20E7AF [0x0015B2F8] - sceAtracSetDataAndGetID
+0x868120B5 [0x0015B300] - sceAtracSetLoopNum
+Import 8, Name sceReg, Functions 6, Variables 0, flags 40010011
+Functions:
+0x0CAE832B [0x0015B480] - sceRegCloseCategory
+0x1D8A762E [0x0015B488] - sceRegOpenCategory
+0x28A8E98A [0x0015B490] - sceRegGetKeyValue
+0x92E41280 [0x0015B498] - sceRegOpenRegistry
+0xD4475AA8 [0x0015B4A0] - sceRegGetKeyInfo
+0xFA8A5739 [0x0015B4A8] - sceRegCloseRegistry
+Import 9, Name SysMemUserForUser, Functions 2, Variables 0, flags 40000011
+Functions:
+0x13A5ABEF [0x0015B1C0] - sceKernelPrintf
+0xACBD88CA [0x0015B1C8] - SysMemUserForUser_ACBD88CA
+Import 10, Name InterruptManager, Functions 3, Variables 0, flags 40000011
+Functions:
+0xCA04A2B9 [0x0015B120] - sceKernelRegisterSubIntrHandler
+0xD61E6961 [0x0015B128] - sceKernelReleaseSubIntrHandler
+0xFB8E22EC [0x0015B130] - sceKernelEnableSubIntr
+Import 11, Name IoFileMgrForUser, Functions 7, Variables 0, flags 40010011
+Functions:
+0x42EC03AC [0x0015B138] - sceIoWrite
+0x63632449 [0x0015B140] - sceIoIoctl
+0x6A638D83 [0x0015B148] - sceIoRead
+0x810C4BC3 [0x0015B150] - sceIoClose
+0xACE946E8 [0x0015B158] - sceIoGetstat
+0x109F50BC [0x0015B160] - sceIoOpen
+0x27EB27B8 [0x0015B168] - sceIoLseek
+Import 12, Name Kernel_Library, Functions 6, Variables 0, flags 00010011
+Functions:
+0xA089ECA4 [0x0015B170] - Kernel_Library_A089ECA4
+0xBEA46419 [0x0015B178] - sceKernelLockLwMutex
+0x092968F4 [0x0015B180] - sceKernelCpuSuspendIntr
+0x15B6446B [0x0015B188] - sceKernelUnlockLwMutex
+0x1839852A [0x0015B190] - Kernel_Library_1839852A
+0x5F10D406 [0x0015B198] - sceKernelCpuResumeIntr
+Import 13, Name ModuleMgrForUser, Functions 4, Variables 0, flags 40010011
+Functions:
+0xD1FF982A [0x0015B1A0] - sceKernelStopModule
+0x2E0911AA [0x0015B1A8] - sceKernelUnloadModule
+0x50F0C1EC [0x0015B1B0] - sceKernelStartModule
+0x977DE386 [0x0015B1B8] - sceKernelLoadModule
+Import 14, Name ThreadManForUser, Functions 32, Variables 0, flags 40010011
+Functions:
+0xC07BB470 [0x0015B1D0] - sceKernelCreateFpl
+0xCD203292 [0x0015B1D8] - sceKernelCancelEventFlag
+0xCEADEB47 [0x0015B1E0] - sceKernelDelayThread
+0xD6DA4BA1 [0x0015B1E8] - sceKernelCreateSema
+0xED1410E0 [0x0015B1F0] - sceKernelDeleteFpl
+0xEF9E4C70 [0x0015B1F8] - sceKernelDeleteEventFlag
+0x1FB15A32 [0x0015B200] - sceKernelSetEventFlag
+0xF475845D [0x0015B208] - sceKernelStartThread
+0xF6414A71 [0x0015B210] - sceKernelFreeFpl
+0x278C0DF5 [0x0015B218] - sceKernelWaitThreadEnd 
+0x27E22EC2 [0x0015B220] - sceKernelResumeDispatchThread
+0x28B6489C [0x0015B228] - sceKernelDeleteSema
+0x30FD48F0 [0x0015B230] - sceKernelPollEventFlag
+0x369ED59D [0x0015B238] - sceKernelGetSystemTimeLow
+
+
+0x383F7BCC [0x0015B240] - sceKernelTerminateDeleteThread
+0x3AD58B8C [0x0015B248] - sceKernelSuspendDispatchThread
+0x3F53E640 [0x0015B250] - sceKernelSignalSema
+0x402FCF22 [0x0015B258] - sceKernelWaitEventFlag
+0x446D8DE6 [0x0015B260] - sceKernelCreateThread
+0x4E3A1105 [0x0015B268] - sceKernelWaitSema
+
+
+0x55C20A00 [0x0015B270] - sceKernelCreateEventFlag
+0x58B1F937 [0x0015B278] - sceKernelPollSema
+0x60107536 [0x0015B280] - sceKernelDeleteLwMutex
+0x623AE665 [0x0015B288] - sceKernelTryAllocateFpl
+0x71BC9871 [0x0015B290] - sceKernelChangeThreadPriority
+0x809CE29B [0x0015B298] - sceKernelExitDeleteThread
+0x812346E4 [0x0015B2A0] - sceKernelClearEventFlag
+0x8FFDF9A2 [0x0015B2A8] - sceKernelCancelSema
+
+
+0x94AA61EE [0x0015B2B0] - sceKernelGetThreadCurrentPriority
+0x9FA03CD3 [0x0015B2B8] - sceKernelDeleteThread
+0xAA73C935 [0x0015B2C0] - sceKernelExitThread
+0x19CFF145 [0x0015B2C8] - sceKernelCreateLwMutex
+Import 15, Name UtilsForUser, Functions 3, Variables 0, flags 40010011
+Functions:
+0x79D1C3FA [0x0015B2D0] - sceKernelDcacheWritebackAll
+0xBFA98062 [0x0015B2D8] - sceKernelDcacheInvalidateRange
+0x3EE30821 [0x0015B2E0] - sceKernelDcacheWritebackRange
+Import 16, Name sceVshBridge, Functions 14, Variables 0, flags 40010011
+Functions:
+0x19BF0207 [0x0015B4C8] - sceVshBridge_19BF0207
+0x1CDD89C1 [0x0015B4D0] - sceVshBridge_1CDD89C1
+0x200330F1 [0x0015B4D8] - sceVshBridge_200330F1
+0x223840C5 [0x0015B4E0] - sceVshBridge_223840C5
+0x25A9405A [0x0015B4E8] - sceVshBridge_25A9405A
+0x376422CA [0x0015B4F0] - sceVshBridge_376422CA
+0x453AFEC9 [0x0015B4F8] - sceVshBridge_453AFEC9
+0x63E40313 [0x0015B500] - sceVshBridge_63E40313
+0x70A0DA86 [0x0015B508] - sceVshBridge_70A0DA86
+0x9093C822 [0x0015B510] - sceVshBridge_9093C822
+0xAE5AEFE9 [0x0015B518] - sceVshBridge_AE5AEFE9
+0xB3E8E4EB [0x0015B520] - sceVshBridge_B3E8E4EB
+0xBC60E14F [0x0015B528] - sceVshBridge_BC60E14F
+0xC09BE41C [0x0015B530] - sceVshBridge_C09BE41C
+Import 17, Name sceBSMan, Functions 1, Variables 0, flags 40090011
+Functions:
+0x46ACDAE3 [0x0015B350] - sceBSMan_46ACDAE3
+Done
